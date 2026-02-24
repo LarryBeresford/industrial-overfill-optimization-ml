@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 40px; position: relative; }
+        body::before { content: "LARRY EDUARDO BERESFORD DÍAZ"; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-size: 4em; color: rgba(0,0,0,0.02); z-index: -1; white-space: nowrap; pointer-events: none; }
+        .report-card { max-width: 1100px; margin: auto; background: white; padding: 50px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .main-roi { background: linear-gradient(135deg, #1a2a6c, #b21f1f); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 40px; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
+        .kpi-item { background: #f8f9fa; padding: 25px; border-radius: 12px; text-align: center; border: 1px solid #eee; }
+        .kpi-val { font-size: 2.2em; font-weight: 900; color: #1a2a6c; }
+        .chart-img { width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; }
+        th { background: #1a2a6c; color: white; padding: 15px; text-transform: uppercase; font-size: 0.8em; }
+        td { padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="report-card">
+        <h1 style="color:#1a2a6c; margin-bottom:0;">STRATEGIC REVENUE & CAPACITY REPORT</h1>
+        <p style="color:#7f8c8d; margin-top:5px;">Larry Eduardo Beresford Díaz | Industrial Data Science</p>
+
+        <div class="main-roi">
+            <div style="font-size: 1.2em; opacity: 0.9;">ANNUAL POTENTIAL REVENUE</div>
+            <div style="font-size: 4em; font-weight: 900; margin: 10px 0;">$195.6M <span style="font-size: 0.4em;">MXN</span></div>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-item"><div class="kpi-val">$28.9M</div><div class="kpi-label">Annual Cost Savings</div></div>
+            <div class="kpi-item"><div class="kpi-val">122,309 kg</div><div class="kpi-label">Annual Raw Material Saved</div></div>
+            <div class="kpi-item"><div class="kpi-val">+4,615,431</div><div class="kpi-label">Free Units Capability</div></div>
+        </div>
+
+        <h2 style="color:#1a2a6c; border-left: 5px solid #b21f1f; padding-left:15px;">Revenue Expansion & Efficiency Validation</h2>
+        <img src="assets/capacity_revenue_expansion.png" class="chart-img">
+
+        <table>
+            <thead>
+                <tr><th>Stage</th><th>Target</th><th>Grams Saved</th><th>Annual Mass</th><th>Annual ROI (MXN)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><b>Batter</b></td><td>16.0g</td><td>4.73g</td><td>62,347 kg</td><td style='color:#27ae60; font-weight:bold;'>$13,092,877</td></tr><tr><td><b>Cream</b></td><td>4.0g</td><td>3.08g</td><td>40,574 kg</td><td style='color:#27ae60; font-weight:bold;'>$11,360,711</td></tr><tr><td><b>Jam</b></td><td>4.0g</td><td>1.47g</td><td>19,388 kg</td><td style='color:#27ae60; font-weight:bold;'>$4,459,222</td></tr><tr><td><b>Product</b></td><td>26.5g</td><td>11.64g</td><td>153,300 kg</td><td style='color:#27ae60; font-weight:bold;'>$35,259,008</td></tr>
+            </tbody>
+        </table>
+
+        <img src="assets/plot_batter.png" class="chart-img"><img src="assets/plot_cream.png" class="chart-img"><img src="assets/plot_jam.png" class="chart-img"><img src="assets/plot_product.png" class="chart-img">
+
+        <div style="text-align:center; margin-top:50px; font-weight:bold; color:#2c3e50;">
+            Larry Eduardo Beresford Díaz<br>
+            <span style="font-size:0.8em; font-weight:normal; color:#7f8c8d;">Senior Data Scientist | github.com/LarryBeresford</span>
+        </div>
+    </div>
+</body>
+</html>
